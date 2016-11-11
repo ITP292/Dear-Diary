@@ -1,7 +1,49 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="DearDiary.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your application description page.</h3>
-    <p>Use this area to provide additional information.</p>
+    <h2>About Us</h2>
+    <h3>The Team</h3>
+
+    <h4>Ryan (Server Freak)</h4>
+    <div id="Ryan">
+        <p>
+            Ryan is the server freak of the team. He is in-charge of the more technical and back-end things of our project. As soon as the project started, he has been really
+            enthusiastic about dealing with the server for our project. As a result, he has one server running in his home right now. Thus, if anything happens to the server, 
+            it is all his responsibility.
+        </p>
+    </div>
+
+    <h4>Angie (The Rude and Normal One)</h4>
+    <div id="Angie">
+        <p>
+            Supposedly, the most "normal" out of all of the other members, Angie has a plethora of memes in her head and everyday she would say something meme-related. Though she
+            can be a bit rude at times, her memes and jokes sometimes help to break away from the stress created from the project and other personal commitments the team might 
+            have.
+        </p>
+    </div>
+
+    <h4>Joanne (The Leader)</h4>
+    <div id="Joanne">
+        <p>
+            The boss of the project, Joanne always keeps in check of the things we would need to do for the project as we progress through the different phases. She also gives
+            great and helpful ideas that really improves the project as a whole as we progress through. Despite having a lack of passion for coding and different technicalities,
+            her determination is unmatched in the team which allows her to complete the objectives that she and the team set out to do.
+        </p>
+    </div>
+
+    <h4>Seri (The "Minah")</h4>
+    <div id="Seri">
+        <p>
+            Always sporting a "tudung" and malay clothing, Seri is the poster malay girl of the team. Seri always asks questions regarding the project which helps the team review
+            whether are we on the right track or are we drifting away from our default objective. Thus, this prevents the team from adding too much unnecessary stuff that eventhough
+            might be beneficial to the project, it is not worth putting extra burden on the team.
+        </p>
+    </div>
+
+    <h4>Aidil (The Outsider)</h4>
+    <div id="Aidil">
+        <p>
+            The newbie in the group, it is Aidil's first time working with this team for a project this big.
+        </p>
+    </div>
 </asp:Content>
