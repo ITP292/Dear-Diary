@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>DEAR DIARY</h1>
+        <h1>Dear Diary</h1>
         <p class="lead">Dear Diary is a Web Application which allows people to turn their physical diary into a virtual diary that they can access from anywhere and share with anyone.</p>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Get Started &raquo;</a></p>
     </div>

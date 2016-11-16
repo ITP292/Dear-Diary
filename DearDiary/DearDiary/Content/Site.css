@@ -36,3 +36,14 @@ input[type="select"] {
         padding: 0;
     }
 }
+
+@font-face{
+    font-family:lostinwild;
+    src:url('../Lost_in_Wild.ttf');
+}
+
+#logo{
+    font-family:lostinwild;
+    font-size:20px;
+    margin-right:10px;
+}
