@@ -11,10 +11,10 @@
     </p>
     <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" Text="Submit" />
     </p>
     <p>
         &nbsp;</p>
     <p>
-        Results will be here<asp:Button ID="Button1" runat="server" Text="Submit" />
-    </p>
+        Results will be here</p>
 </asp:Content>
