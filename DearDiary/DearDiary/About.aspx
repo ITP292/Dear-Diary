@@ -43,9 +43,10 @@
     </div>
 
     <div class="abox">
-    <h4>Aidil (The Outsider)</h4>
+    <h4>Aidil (The Debugger)</h4>
         <p>
-            The newbie in the group, it is Aidil's first time working with this team for a project this big.
+            Always the one cracking his head over a line of code that has an error, Aidil spends a crazy amount of time to solve a tiny little problem in the code for the team.
+            He spends so much time in Visual Studio that we think that he has an affair with it. Don't tell him I said that.
         </p>
     </div>
 </asp:Content>
