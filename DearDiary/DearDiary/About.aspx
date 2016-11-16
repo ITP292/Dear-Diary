@@ -45,7 +45,7 @@
     <div class="abox">
     <h4>Aidil (The Outsider)</h4>
         <p>
-            The newbie in the group, it is Aidil's first time working with this team for a project this big.
+            The newbie in the group, it is Aidil's first time working with this team for a project this big. HI.
         </p>
     </div>
 </asp:Content>
