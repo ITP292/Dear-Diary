@@ -32,15 +32,10 @@
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Privacy Policy</h2>
+            <h2>About Dear Diary</h2>
             <p>
-                We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone.
-            </p>
-            <p>
-                We will use your information to respond to you, regarding the reason you contacted us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g. to ship an order.
-            </p>
-            <p>
-                Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.
+                Dear Diary is a website where you can express your feelings towards your friends without the worry about
+                security. To register for a new account, click <a href="Account/Register.aspx">here</a>!
             </p>
         </div>
     </div>
