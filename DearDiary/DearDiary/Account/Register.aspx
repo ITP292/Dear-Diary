@@ -36,10 +36,18 @@
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
             </div>
         </div>
+        <div class="form-group" style="font-weight: bold">
+            <div class="col-md-10">
+                Phone Number
+            <asp:TextBox runat="server" ID="PhoneNumber" TextMode="Phone" CssClass="form-control" />
+
+            </div>
+        </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
             </div>
         </div>
+    </div>
     </div>
 </asp:Content>
