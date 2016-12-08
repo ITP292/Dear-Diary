@@ -17,6 +17,7 @@ namespace DearDiary.Account
             //ForgotPasswordHyperLink.NavigateUrl = "Forgot";
             OpenAuthLogin.ReturnUrl = Request.QueryString["ReturnUrl"];
             var returnUrl = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
+
             if (!String.IsNullOrEmpty(returnUrl))
             {
                 RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
@@ -59,3 +60,6 @@ namespace DearDiary.Account
         }
     }
 }
+
+//String email = Email.Text;
+//String password = Password.Text;
