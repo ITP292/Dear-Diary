@@ -26,9 +26,12 @@
                     CssClass="text-danger" ErrorMessage="The password field is required." />
             </div>
         </div>
+
+        <div class="form-group" style="font-weight: bold">
+            <div class="col-md-10" style="left: 3px; top: 0px">
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="ConfirmPassword" CssClass="col-md-2 control-label">Confirm password</asp:Label>
-            <div class="col-md-10">
+            <div class="col-md-10" style="left: 0px; top: 0px">
                 <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" CssClass="form-control" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
@@ -36,18 +39,19 @@
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
             </div>
         </div>
-        <div class="form-group" style="font-weight: bold">
-            <div class="col-md-10">
-                Phone Number
-            <asp:TextBox runat="server" ID="PhoneNumber" TextMode="Phone" CssClass="form-control" />
-
             </div>
         </div>
+
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
             </div>
         </div>
-    </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <%-- Put textbox and label here for phone number--%>
+            </div>
+        </div>
     </div>
 </asp:Content>
