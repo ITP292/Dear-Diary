@@ -18,6 +18,7 @@
                     CssClass="text-danger" ErrorMessage="The email field is required." />
             </div>
         </div>
+
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>
             <div class="col-md-10">
@@ -41,17 +42,19 @@
         </div>
             </div>
         </div>
-
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <%-- Put textbox and label here for phone number--%>
+                <asp:Label ID="Label1" runat="server" Text="Phone Number"></asp:Label>
+                <asp:TextBox runat="server" ID="PhoneNumber" TextMode="Number" CssClass="form-control" />
+            </div>
+        </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
             </div>
         </div>
 
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <%-- Put textbox and label here for phone number--%>
-            </div>
-        </div>
+        
     </div>
 </asp:Content>
