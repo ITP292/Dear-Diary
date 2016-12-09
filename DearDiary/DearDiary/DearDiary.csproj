@@ -199,9 +199,9 @@
     <Content Include="Account\Testing1.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
+    <Content Include="App_Data\aspnet-DearDiary-20161028103417.mdf" />
+    <Content Include="App_Data\aspnet-DearDiary-20161028103417_log.ldf">
+      <DependentUpon>aspnet-DearDiary-20161028103417.mdf</DependentUpon>
     </Content>
     <Content Include="Friends\addFriend.aspx" />
     <Content Include="Friends\addFriendRedir.aspx" />
