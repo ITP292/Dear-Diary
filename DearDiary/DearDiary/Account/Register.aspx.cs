@@ -26,7 +26,7 @@ namespace DearDiary.Account
 
                 //Sign in into the account created
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
-                IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                IdentityHelper.RedirectToReturnUrl("/Account/Testing1", Response);
                 //Newly added - Input redirect into account 
                 Response.Redirect("");
             }
