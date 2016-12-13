@@ -14,16 +14,19 @@ namespace DearDiary.Account
         {
             RegisterHyperLink.NavigateUrl = "Register";
             //Enable this once you have account confirmation enabled for password reset functionality
-            //ForgotPasswordHyperLink.NavigateUrl = "Forgot";
+            ForgotPasswordHyperLink.NavigateUrl = "Forgot";
             OpenAuthLogin.ReturnUrl = Request.QueryString["ReturnUrl"];
             string returnUrl = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
+
 
             if (!String.IsNullOrEmpty(returnUrl))
             {
                 RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
+                ForgotPasswordHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
             }
             else
                 RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + "/Account/Testing1";
+                ForgotPasswordHyperLink.NavigateUrl += "?ReturnUrl=" + "/Account/Testing1";
         }
 
         protected void LogIn(object sender, EventArgs e)
