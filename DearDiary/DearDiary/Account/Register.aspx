@@ -10,30 +10,54 @@
         <h4>Create a new account</h4>
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
+
+        <%--First Name--%>
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="FName" CssClass="col-md-2 control-label" ID="Label3">First Name</asp:Label>
+            <asp:TextBox runat="server" ID="FName" CssClass="form-control" Width="424px" />
+            <div class="col-md-10">
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="FName"
+                    CssClass="text-danger" ErrorMessage="The First Name field is required." />
+            </div>
+        </div>
+        <%--Last Name--%>
+        <div class="form-group">
+
+            <asp:Label runat="server" AssociatedControlID="LName" CssClass="col-md-2 control-label" ID="Label4">Last Name</asp:Label>
+            <asp:TextBox runat="server" ID="LName" CssClass="form-control" TextMode="SingleLine" Width="424px" />
+            <div class="col-md-10">
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="LName"
+                    CssClass="text-danger" ErrorMessage="The Last Name field is required." />
+            </div>
+        </div>
+        
+        <%--Email--%>
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>
-            <div class="col-md-10">
                 <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
+            <div class="col-md-10">
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
                     CssClass="text-danger" ErrorMessage="The email field is required." />
             </div>
         </div>
-
+        
+        <%--Password--%>
         <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>
-            <div class="col-md-10">
+            <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label" style="left: -2px; top: 2px">Password</asp:Label>
                 <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
+            <div class="col-md-10">
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
                     CssClass="text-danger" ErrorMessage="The password field is required." />
             </div>
         </div>
 
+        <%--Confirm Password--%>
         <div class="form-group" style="font-weight: bold">
             <div class="col-md-10" style="left: 3px; top: 0px">
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="ConfirmPassword" CssClass="col-md-2 control-label">Confirm password</asp:Label>
-            <div class="col-md-10" style="left: 0px; top: 0px">
                 <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" CssClass="form-control" />
+            <div class="col-md-10" style="left: 0px; top: 0px">
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
                 <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
@@ -42,19 +66,24 @@
         </div>
             </div>
         </div>
+
+        <%--Phone Number--%>
         <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <%-- Put textbox and label here for phone number--%>
-                <asp:Label ID="Label1" runat="server" Text="Phone Number"></asp:Label>
-                <asp:TextBox runat="server" ID="PhoneNumber" TextMode="Number" CssClass="form-control" />
+           
+            <asp:Label runat="server" AssociatedControlID="PhoneNumber" CssClass="col-md-2 control-label" ID="Label5">Phone Number</asp:Label>
+                <asp:TextBox runat="server" ID="PhoneNumber" TextMode="Phone" CssClass="form-control" />
+           <div class="col-md-10">
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="PhoneNumber"
+                    CssClass="text-danger" ErrorMessage="The Phone Number field is required." />
             </div>
         </div>
+
+        <%--Register Button--%>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
             </div>
         </div>
-
-        
+              
     </div>
 </asp:Content>

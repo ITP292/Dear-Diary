@@ -15,8 +15,10 @@ namespace DearDiary.Account
         {
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
-            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text };
+            var user = new ApplicationUser() { UserName = FName.Text + " " + LName.Text, Email = Email.Text };
             IdentityResult result = manager.Create(user, Password.Text);
+
+           
             if (result.Succeeded)
             {
                 //For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
@@ -25,7 +27,7 @@ namespace DearDiary.Account
                 //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
 
                 //Sign in into the account created
-                signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
+                signInManager.SignIn(user, isPersistent: false, rememberBrowser: false);
                 IdentityHelper.RedirectToReturnUrl("/Account/Testing1", Response);
                 //Newly added - Input redirect into account 
                 Response.Redirect("");
