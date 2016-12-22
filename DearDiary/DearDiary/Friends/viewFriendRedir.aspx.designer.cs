@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DearDiary {
+namespace DearDiary.Friends {
     
     
-    public partial class addFriendRedir {
+    public partial class viewFriendRedir {
     }
 }
